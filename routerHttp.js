@@ -3,18 +3,10 @@ var mobile = require('is-mobile');
 module.exports = function(app, redT) {
     // Home
     app.get('/', function(req, res) {
-        if (mobile({ ua: req })) {
-            return res.redirect('/mobile/');
-        } else {
-            return res.redirect('/web/');
-        }
+        return res.redirect('/web/');
     });
     app.get('/web/', function(req, res) {
-        if (mobile({ ua: req })) {
-            return res.redirect('/mobile/');
-        } else {
-            return res.render('index');
-        }
+        return res.render('index');
     });
     app.get('/mobile/', function(req, res) {
         if (mobile({ ua: req })) {
