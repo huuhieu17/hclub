@@ -4,10 +4,7 @@ require('dotenv').config();
 var cors = require('cors');
 
 let Telegram = require('node-telegram-bot-api');
-let TelegramToken = '5598025206:AAEjrfjPQp00EGiD0NP3tNB5eW1YqKc0tYw';
-// let TelegramToken = '1094426496:AAGdlkqAe9zjYkUhlgHK4F6DoS-fwU1fuvA';
-//let TelegramToken = "1147607934:AAEsypTJsy_agatrnnmHlMNPvbNaBeB4zZM";
-
+let TelegramToken = process.env.TELEGRAM_TOKEN;
 let TelegramBot = new Telegram(TelegramToken, { polling: true });
 let express = require('express');
 let app = express();
