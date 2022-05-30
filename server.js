@@ -70,9 +70,6 @@ require('./config/Cron')();
 require('./update')();
 
 require('./app/Telegram/Telegram')(TelegramBot); // Telegram Bot
-setInterval(function () {
-    http.get("http://club.huuhieu.name.vn/");
-  }, 3000); // every 5 minutes (300000)
   
 app.listen(port, function() {
     console.log("Server listen on port ", port);
