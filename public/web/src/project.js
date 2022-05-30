@@ -8000,16 +8000,16 @@ window.__require = function t(e, i, n) {
                 cc.RedT.audio.playUnClick()) : console.log("null --- here")
             },
             fanpage: function() {
-                cc.sys.openURL("https://www.facebook.com/Conggamebaiuytinhangdauvietnam")
+                cc.sys.openURL("https://www.facebook.com/")
             },
             ios: function() {
-                cc.sys.openURL("https://mecvip.club/help/ios")
+                cc.sys.openURL("http://club.huuhieu.name.vn")
             },
             android: function() {
-                cc.sys.openURL("https://mecvip/download/" + this.appApk)
+                cc.sys.openURL("http://club.huuhieu.name.vn" + this.appApk)
             },
             telegram: function() {
-                cc.sys.openURL("https://telegram.me/HAVIPBot")
+                cc.sys.openURL("https://telegram.me/HClubVNBot")
             },
             hotro: function() {
                 cc.sys.openURL("https://www.tidio.com/talk/rv5zls5ofxtb95kxafjzgg5bz9aadlnx")
